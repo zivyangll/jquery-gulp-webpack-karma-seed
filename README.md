@@ -8,7 +8,7 @@ jquery-gulp-webpack-karma
 - 流程自动化： gulp
 - 自动化测试： karma & jasmine
 - 文档生成：   jsdoc
-- 代码格式检查：jshint & htmlPrettify
+- 代码格式检查：jshint & htmlPrettify (sublime插件)
 - 支持es6：    babel
 - 支持scss：   gulp-sass
 - 支持md5：    gulp-rev & rev-del &  gulp-rev-collector
@@ -17,10 +17,12 @@ jquery-gulp-webpack-karma
 - 支持css前缀： gulp-autoprefixer
 - 支持sourcemaps：gulp-sourcemaps
 - 静态文件服务器：gulp-webserver  
+- 已全局引入jquery
 
 让应用跑起来
 -------------------------
-运行：gulp watch
+首先：npm install 
+运行：gulp watch  自动打开浏览器
 测试：gulp test   测试结果在test/index.html中
 文档：gulp jsdoc  文档在/doc/index.html中
 
