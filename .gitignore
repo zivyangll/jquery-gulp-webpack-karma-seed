@@ -1,0 +1,12 @@
+/node_modules
+/test/coverage
+/test/index.html
+.svn/
+.DS_Store
+*.log*
+*.sublime-project
+*.sublime-workspace
+.idea
+*~
+*.iml
+*.pyc
