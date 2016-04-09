@@ -22,16 +22,22 @@ jquery-gulp-webpack-karma
 让应用跑起来
 -------------------------
 首先：npm install 
+
 运行：gulp watch  自动打开浏览器
+
 测试：gulp test   测试结果在test/index.html中
+
 文档：gulp jsdoc  文档在/doc/index.html中
 
 项目目录说明
 -------------------------
 -- dist 项目打包目录
 > -- srcipts：打包后的js以及sourcemap文件
+
   -- styles：打包后的css以及sourcemap文件
+
   -- images：压缩后的图片
+
   -- index.html： 压缩后的html
 
 -- doc 项目文档目录
@@ -41,13 +47,19 @@ jquery-gulp-webpack-karma
 
 -- src 项目源码
 > -- srcipts：js源码
+
   -- styles：scss源码
+
   -- images：图片
+
   -- index.html： 主页
+
 
 -- test 项目测试
 > -- coverage 覆盖率检测，结果在./coverage/**/index.html中
+
   -- index.html 测试结果
+  
   -- *.js 测试代码
 
 

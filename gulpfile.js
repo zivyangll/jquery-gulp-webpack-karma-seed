@@ -46,18 +46,21 @@ gulp.task('htmlrev', ['styles', 'scripts'], function() {
 // 监测html时修改html
 gulp.task('html', function() {
   revTask.html();
+  gulp.watch(['dist/**', 'test/index.html']).on('change', livereload.changed);
 });
 
 // 监测样式时修改html
 gulp.task('htmlcss', ['styles'], function() { // 监测css文件改变时依赖styles任务
   revTask.html();
   revTask.css();
+  gulp.watch(['dist/**', 'test/index.html']).on('change', livereload.changed);
 });
 
 // 监测脚本时修改html
 gulp.task('htmljs', ['scripts'], function() { // 监测js文件改变时依赖scripts任务
   revTask.js();
   revTask.html();
+  gulp.watch(['dist/**', 'test/index.html']).on('change', livereload.changed);
 });
 
 // 样式处理
@@ -148,5 +151,4 @@ gulp.task('watch', function() {
   gulp.watch('src/images/**/*', ['images']);
   // 看守所有位在 dist/  目录下的档案，一旦有更动，便进行重整
   livereload.listen();
-  gulp.watch(['dist/**', 'test/index.html']).on('change', livereload.changed);
 });
