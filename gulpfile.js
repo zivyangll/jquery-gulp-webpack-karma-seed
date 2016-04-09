@@ -126,7 +126,7 @@ gulp.task('test', function(done) {
 
 // 清理
 gulp.task('clean', function() {
-  return gulp.src(['dist/*', 'doc/*'], { read: false })
+  return gulp.src(['dist/*'], { read: false })
     .pipe(clean());
 });
 
