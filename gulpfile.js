@@ -4,10 +4,10 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'), // 生成sourcemap
   autoprefixer = require('gulp-autoprefixer'), // css前缀
   imagemin = require('gulp-imagemin'), // 最小化图片
+  shell = require("gulp-shell"), // 执行shell命令
   rev = require('gulp-rev'), // 添加md5
   revDel = require('rev-del'), // 删除md5冗余文件
   revCollector = require('gulp-rev-collector'), //替换html，css，js中引用的文件名
-  shell = require("gulp-shell"), // 执行shell命令
   htmlmin = require('gulp-htmlmin'), // 压缩html
   clean = require('gulp-clean'), // 清理文件夹
   webserver = require('gulp-webserver'), // 静态文件服务器
@@ -116,7 +116,7 @@ gulp.task('webserver', ['htmlrev'], function() {
 });
 
 // 需要时生成文档：gulp jsdoc
-gulp.task('jsdoc', shell.task(['./node_modules/.bin/jsdoc src/scripts -r -d doc']));
+gulp.task('doc', shell.task(['./node_modules/.bin/jsdoc src/scripts -r -d doc']));
 
 // 需要测试时运行：gulp test
 gulp.task('test', function(done) {

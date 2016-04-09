@@ -21,13 +21,13 @@ jquery-gulp-webpack-karma
 
 让应用跑起来
 -------------------------
-首先：npm install 
+安装：npm install 安装依赖包 
 
-运行：gulp watch  自动打开浏览器
+运行：npm start  自动打开浏览器
 
-测试：gulp test   测试结果在test/index.html中
+测试：npm test   测试结果在test/index.html中
 
-文档：gulp jsdoc  文档在/doc/index.html中
+文档：gulp doc  文档在/doc/index.html中
 
 项目目录说明
 -------------------------
