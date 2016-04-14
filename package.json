@@ -1,5 +1,5 @@
 {
-  "name": "gulptest",
+  "name": "jqueryseed",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,16 @@
     "start": "gulp watch",
     "test": "gulp test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "jquery",
+    "gulp",
+    "webpack",
+    "karma",
+    "es6",
+    "babel"
+  ],
+  "author": "yanglonglong",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.5",
     "babel-loader": "^6.2.4",
@@ -33,7 +40,6 @@
     "jasmine-jquery": "^2.1.1",
     "jquery": "^2.2.3",
     "jsdoc": "^3.4.0",
-    "jshint": "^2.9.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.3",
     "karma-coverage": "^0.5.5",
