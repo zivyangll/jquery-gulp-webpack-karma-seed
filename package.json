@@ -1,7 +1,7 @@
 {
   "name": "jqueryseed",
   "version": "1.0.0",
-  "description": "",
+  "description": "适合发开jquery插件，最后只生成一个js和一个css",
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
